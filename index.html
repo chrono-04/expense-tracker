@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <header>
+      <div class="dashboard">
+        <h1>
+          Total Balance:
+          <p>$69</p>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <div>
+          <label for="type">Type</label>
+          <select name="type" id="type">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="amount">Amount</label>
+          <input type="number" />
+        </div>
+
+        <div>
+          <label for="categories">Category</label>
+          <select name="categories" id="categories">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="rent">Rent</option>
+            <option value="salary">Salary</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="description">Description</label>
+          <input type="text" id="description" />
+        </div>
+
+        <div>
+          <label for="date">Date</label>
+          <input type="date" />
+        </div>
+      </form>
+
+      <ul class="records-container"></ul>
+    </main>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
