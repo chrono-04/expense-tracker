@@ -6,4 +6,49 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: 40 20px;
+  border: 2px solid black;
+}
+
+form {
+  display: flex;
+  gap: 16px;
+}
+
+form > div {
+  font-size: 20px;
+}
+
+form > div > select {
+  font-size: 18px;
+}
+form > div > input {
+  font-size: 18px;
+}
+
+.add-btn {
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Records List */
+
+.records-container {
+  margin: 20px;
+  list-style-type: none;
 }
